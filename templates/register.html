@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "style.css" %}">
 
 </head>
 <body>
 <h1>Register Form</h1>
-
-
-<form action="">
+<form action="" method="POST">
     {% csrf_token %}
     {{ reg_form.as_p }}
     <input type="submit" name="jhbe" value="Register">
 </form>
+{% if submit_button == "Register" %}
+
+{{ name }}
+{{ email }}
+
+{% endif %}
 </body>
 </html>
