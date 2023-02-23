@@ -10,13 +10,15 @@
 <body>
 <h1>Register Form</h1>
 <form action="" method="POST">
+    <div class="duuj">
     {% csrf_token %}
     {{ reg_form.as_p }}
-    <input type="submit" name="jhbe" value="Register">
+    <input type="submit" name="jhbe" value="Register"class="jhf">
+   </div>
 </form>
 {% if submit_button == "Register" %}
 
-{{ name }}
+{{  name }}
 {{ email }}
 
 {% endif %}

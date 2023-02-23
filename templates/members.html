@@ -9,10 +9,16 @@
 </head>
 <body>
 <h1>Members Page</h1>
-<form action="" method="POST">
-    {% csrf_token %}
-    {{ reg_members.as_p }}
-    <input type="submit" name="members" value="RegisterMembers">
+<form action="" method="POST" class="">
+    <div >
+        {% csrf_token %}
+        {{ reg_members.as_p }}
+        <input type="submit" name="members" value="RegisterMembers" style="color: #477943;
+        border-color: #d3dcd3;
+        alignment: center;
+        width: 200px ;
+        height: 30px;margin-left: 440px">
+    </div>
 </form>
 {% if submit_members == "RegisterMembers" %}
 

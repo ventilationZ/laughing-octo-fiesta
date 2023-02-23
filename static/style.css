@@ -1,0 +1,9 @@
+body {
+    background-color: #b5bbb7;
+    justify-content: center;
+    color: #477943;
+}
+
+form p{display: flex;
+justify-content: center;
+}
